@@ -6,20 +6,22 @@ import Overview from "./pages/overview/Overview.jsx";
 import NewPost from "./pages/newPost/NewPost.jsx";
 import NotFound from "./pages/notFound/NotFound.jsx";
 import Navigation from "./components/navigation/Navigation.jsx";
+import Post from "./pages/post/Post.jsx";
 
 function App() {
     return (
-        <div className="page-container">
-            <img src={logo} alt="Company logo"/>
-            <h1>Begin hier met het maken van jouw blog-applicatie!</h1>
+        <>
             <Navigation/>
-            <Routes>
-                <Route path="/" element={<Home/>}/>
-                <Route path="/nieuwe-post" element={<NewPost/>}/>
-                <Route path="/alle-posts" element={<Overview/>}/>
-                <Route path="*" element={<NotFound/>}/>
-            </Routes>
-        </div>
+            <main className="page-container">
+                <Routes>
+                    <Route path="/" element={<Home/>}/>
+                    <Route path="/nieuwe-post" element={<NewPost/>}/>
+                    <Route path="/alle-posts" element={<Overview/>}/>
+                    <Route path="/post/:id" element={<Post/>}/>
+                    <Route path="*" element={<NotFound/>}/>
+                </Routes>
+            </main>
+        </>
     )
 }
 
