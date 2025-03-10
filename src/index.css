@@ -55,3 +55,11 @@ h4 {
 p {
   margin-block: 0.5em;
 }
+
+a, link, NavLink {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
