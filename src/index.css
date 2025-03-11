@@ -28,6 +28,13 @@ button, input, select, textarea {
   font-family: inherit;
 }
 
+button {
+  background-color: var(--color-primary);
+  border: none;
+  cursor: pointer;
+  margin-block: 0.67em;
+}
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
