@@ -9,6 +9,10 @@
     color: white;
 }
 
+.navigation img {
+    width: 10rem;
+}
+
 ul {
     list-style-type: none;
     flex-basis: 20rem;

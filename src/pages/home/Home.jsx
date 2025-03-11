@@ -1,7 +1,10 @@
+import logo from "../../assets/logo-black.png"
+
 function Home() {
     return (
         <>
-            <h2>Home</h2>
+            <h1>Dit is de super leuke homepagina</h1>
+            <img src={logo} alt="Logo"/>
         </>
     )
 }

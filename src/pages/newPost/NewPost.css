@@ -3,3 +3,8 @@
     flex-direction: column;
     width: 400px;
 }
+
+.new-post form input {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+}

@@ -5,7 +5,7 @@ import "./Overview.css"
 function Overview() {
     return (
         <section className="overview">
-            <h1>Bekijk de {posts.length} posts op de pagina</h1>
+            <h2>Bekijk de {posts.length} posts op de pagina</h2>
             <ul className="post-list">
                 {posts.map(post => {
                     return (
