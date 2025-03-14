@@ -13,8 +13,9 @@ function Overview() {
         setErrors(false);
         try {
             const result = await axios.get(`http://localhost:3000/posts`);
-            console.log(result);
             setPosts(result.data);
+            setErrors(false);
+            setLoading(false);
         } catch (e) {
             console.error(e);
             setErrors(true);
