@@ -9,6 +9,7 @@ import Navigation from "./components/navigation/Navigation.jsx";
 import Post from "./pages/post/Post.jsx";
 
 function App() {
+
     return (
         <>
             <Navigation/>
